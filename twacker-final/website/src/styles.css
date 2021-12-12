@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Catamaran");
+
+:root {
+    --navbg: #3d3640;
+    --footbg: #3d3640;
+    --navtext: white;
+    --foottext: #a19e96;
+    --head1: #04855a;
+    --head2: #026343;
+    --head3: #01412b;
+    --paracolor: #444444;
+    --mainbgcolor: white;
+    --imgborder: #505C70;
+    --strongemcolor: #2c3e50;
+
+    --maina: ;
+    --mainaactive: ;
+    --mainahover: ;
+    --nava: white;
+    --navaactive: #ecf0f1;
+    --navahover: #95a5a6;
+    --foota: #c9c5bb;
+    --footaactive: #b9b6ad;
+    --footahover: #dad7cf;
+
+    --downloadbgcolor: #646476;
+    --downloadbuttoncolor: #F2F2F7;
+    --downloadbuttonborder: #D6D6DB;
+    --downloadtextcolor: white;
+    --downloadauthorcolor: #B4B4D4;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--mainbgcolor);
+}
+nav li {
+  display: inline;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: var(--navtext);
+  font-family: "Catamaran", sans-serif;
+  font-size: 18pt;
+  font-weight: 20;
+}
+nav ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  grid-column: 2;
+  margin: auto;
+  height: 50%;
+  justify-content: space-evenly;
+}
+#navbar {
+  background-color: var(--navbg);
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 60px;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  width: 100%;
+  z-index: 3;
+}
+.hamburger {
+  grid-column: 1;
+}
+nav img {
+  height: 100%;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-left: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  opacity: 0;
+}
+#header-no-nav {
+  background-image: url("/images/twacker2.png");
+  background-attachment: fixed;
+  background-position: top;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.scrolldown {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+    transition-duration: 1s;
+}
+ .scrolldown span {
+     position: absolute;
+     top: 0;
+     left: 0;
+     display: block;
+     width: 100%;
+     height: 100%;
+     border-bottom:2px solid #fff;
+     border-right:2px solid #fff;
+     animation: scrolldownarrows 1.5s linear infinite;
+     opacity: 0;
+}
+
+.scrolldown span:nth-child(1) {
+    transform: translate(-15px, -15px);
+    animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2) {
+    transform: translate(0, 0);
+    animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3) {
+    transform: translate(15px, 15px);
+    animation-delay: 0;
+}
+
+@keyframes scrolldownarrows {
+    0% {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25% {
+        top: 0px; 
+        left: 0px; 
+        opacity: 1;
+    }
+    50%, 100% {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
+
+@keyframes logo_slidein {
+  from {opacity: 0; top: 40px;}
+  to {opacity: 100%; top: 0px;}
+}
+
+#toggle {
+    display: none;
+}
+
+
+.hlogo {
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  animation-name: logo_slidein;
+  animation-duration: 1.5s;
+  transition: all .2s ease-in-out;
+}
+.hlogo:hover {
+  transform: scale(1.1);
+}
+#headermobile {
+    display: none;
+}
+
+main {
+  display: block;
+  width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--mainbgcolor);
+  margin-top: 50px;
+}
+main h1 {
+  font-size: 50pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: var(--head1);
+  margin: 0;
+  padding: 15px;
+  padding-left: 0;
+  padding-bottom: 0;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+main h2 {
+  font-size: 24pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: var(--head2);
+  margin: 0;
+  padding: 15px;
+  padding-left: 0;
+  padding-top: 0;
+  text-indent: 25px;
+}
+main p {
+  font-size: 14pt;
+  font-family: "Merriweather", serif;
+  color: var(--paracolor);
+  margin: 0;
+  padding: 15px;
+  text-indent: 2em;
+  line-height: 1.6;
+}
+
+main img {
+  display: block;
+  margin: auto;
+  border-left: solid;
+  border-color: var(--imgborder);
+  border-left-width: 20px;
+  width: 80%;
+}
+main strong {
+  font-style: bold;
+  color: var(--strongemcolor);
+}
+main em {
+  font-style: italic;
+  color: var(--strongemcolor);
+}
+
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--footbg);
+  display: grid;
+  grid-template-columns: auto auto;
+  color: var(--foottext);
+  font-family: "Catamaran", sans-serif;
+  font-size: 12pt;
+}
+footer>* {
+  place-self: center;
+}
+
+main a {color: var(--maina);}
+main a:hover {color: var(--mainahover);}
+main a:active {color: var(--mainaactive);}
+main a:visited {color: var(--maina);}
+nav>ul>li>a {color: var(--nava); text-decoration: none;}
+nav>ul>li>a:hover {color: var(--navahover); text-decoration: none;}
+nav>ul>li>a:active {color: var(--navaactive); text-decoration: none;}
+nav>ul>li>a:visited {color: var(--nava); text-decoration: none;}
+footer a {color: var(--foota); text-decoration: none;}
+footer a:hover {color: var(--footahover); text-decoration: none;}
+footer a:active {color: var(--footaactive); text-decoration: none;}
+footer a:visited {color: var(--foota); text-decoration: none;}
+footer a:visited:hover {color: var(--footahover); text-decoration: none;}
+
+
+
+.packdownload {
+  background-color: var(--downloadbgcolor);
+  border: 2px solid var(--downloadbordercolor);
+  border-radius: 15px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20%;
+  margin: auto;
+  margin: 30px;
+  padding: 15px;
+  padding-top: 25px;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  border: 2px solid var(--downloadbgcolor);
+}
+a h1 {
+  text-decoration: none;
+}
+.packdownload h1 {
+  font-family: "Catamaran";
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: 5px;
+  justify-self: center;
+  color:var(--downloadtextcolor);
+  letter-spacing: 1px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+}
+.packdownload h2 {
+  font-family: "Catamaran";
+  font-size: 18px;
+  padding: 10px;
+  justify-self: center;
+  color:var(--downloadauthorcolor);
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.packdownload img {
+  width: 80%;
+  border: 3px solid white;
+  transition-duration: 0.3s;
+}
+.packdownload:hover {
+  background-color: white;
+  border: 2px solid var(--downloadbuttonborder);
+}
+.packdownload:hover img {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.packdownload:hover h1 {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.packdownload:hover h2 {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+.packdownload p {
+  opacity: 0;
+  text-indent: 0;
+  position: absolute;
+  font-family: "Catamaran";
+  font-size: 20px;
+}
+.packdownload:hover p {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width: 600px) {
+  #navbar {
+    height: 8vh;
+  }
+  .navlinks {
+    position: fixed;
+    background: var(--navbg);
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+
+    clip-path: circle(10px at 10% 0%);
+    -webkit-clip-path: circle(10px at 10% 0%);
+    transition: all 0.5s ease-out;
+    pointer-events: none;
+
+  }
+  nav li {
+    font-size: 50pt;
+  }
+  .navlinks.open{
+    clip-path: circle(2400px at 10% 0%);
+    -webkit-clip-path: circle(2400px at 10% 0%);
+    pointer-events: all;
+  }
+
+  .line {
+    width: 70%;
+    height: 0.3vh;
+    background: var(--navtext);
+    margin: 0.5vh;
+  }
+  .hamburger {
+    position: relative;
+    top: 40%;
+    left: 10%;
+    transform: translate(-5%, 50%);
+
+    cursor: pointer;
+    z-index: 5;
+    margin-left: 15px;
+  }
+  #header-no-nav {
+    border-top: 8vh solid #160030;
+  }
+  #headermobile {
+      display: inline-block;
+      height: 10vh;
+      width: 10vh;
+  }
+  #headerdesktop {
+      display: none;
+  }
+  .scrolldown {
+    display: none;
+  }
+  main {
+    width: 80%;
+  }
+  main p {
+    font-size: 20pt;
+  }
+  main h1 {
+      font-size: 24pt;
+  }
+  main h2 {
+      font-size: 23pt;
+  }
+  main h3 {
+      font-size: 22pt;
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--footbg);
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    color: var(--foottext);
+    font-family: "Catamaran", sans-serif;
+    font-size: 12pt;
+    padding: 15px;
+  }
+  footer>* {
+    place-self: center;
+  }
+}
