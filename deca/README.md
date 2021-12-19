@@ -2,9 +2,9 @@
 
 ## Grade 10
 
-ESB - Call-A-Cup
+EIP - Call-A-Cup
 
-ESB - Atelier
+EIP - Atelier
 
 Roleplays: MTDM, RFSM
 
