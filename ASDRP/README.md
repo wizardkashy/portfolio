@@ -33,3 +33,14 @@ Topics Learned:
 Programming Languages / Software:
 - Orange Data Mining Application
 - SQL
+
+### Grade 11 - first semester: Finding Mini Black Hole Candidates using Outlier Detection in Exoplanets
+I chose to go out of my comfort zone for this project, learning about a topic (astronomy) I have never really studied. I assumed a leadership position in our group of 8 researchers and worked with the team to search for new datasets as part of this continuing research project.
+
+Topics Learned:
+- Delegating tasks in leadership settings
+- Working with extremely large datasets
+
+Programming Languages / Software:
+- Oranga Data Mining Application
+- Various forms of SQL
