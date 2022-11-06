@@ -1,4 +1,7 @@
 # twacker
+
+This is my semester final project for my AP Computer Science A class. When running the python file it logs data from applications you use and presents them to you through a web browser.
+
 tracker for computer applications
 
 This application uses the psutil and ctypes libraries in python to get the process name of the foreground window.
