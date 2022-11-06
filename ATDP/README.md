@@ -21,3 +21,4 @@ and a working replay system! This was probably my favorite project I've done at 
 
 You can visit the website here: https://atdpsites.berkeley.edu/aiyer/AIC/P2/Webpages/index.php
 
+You can also dig through the source code in our github release: https://github.com/justinoh4116/atdp-p2-speed/releases/tag/v1.0.1
