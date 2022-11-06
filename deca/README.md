@@ -7,14 +7,14 @@ I have been a part of DECA for two full years, and am entering my third year as 
 
 ## Grade 10
 
-EIP - Call-A-Cup (mobile coffee station for stay-at-home workers)
+Innovation Plan - Call-A-Cup (mobile coffee station for stay-at-home workers)
 
-EIP - Atelier (social media / marketing platform for aspiring artists to meet art lovers)
+Innovation Plan - Atelier (social media / marketing platform for aspiring artists to meet art lovers)
 
 Roleplays: MTDM (marketing team decision making), RFSM (restaurant food service management)
 
 ## Grade 11
 
-ESB - Vizia
+Start-up Business Plan - Vizia
 
 Roleplays: RFSM
