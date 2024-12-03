@@ -12,6 +12,6 @@ Personal discord bot using discord.py's API Wrapper to partake in various shenan
 - - Searches for images and gifs online through Pixabay search API and Giphy search API
   - Image Manipulation commands using PIL (formerly Pillow) image library
     - Grab the last image in the text channel and add "meme" text to it
-    - Grab the last image in the text channel, assumes it is a Minecraft screenshot and append a "hacked client" GUI to it, making it look like the player in the screenshot is cheating (even though they are not). This is what my friends and I thought was funny when I wrote this.
+    - Grab the last image in the text channel, assumes it is a Minecraft screenshot and appends a "hacked client" GUI to it, making it look like the player in the screenshot is cheating (even though they are not). This is what my friends and I thought was funny when I wrote this.
 
 This bot was developed in 2021 for an older version of discord.py, and likely won't run anymore. The code for interacting with the API's might be outdated too.
