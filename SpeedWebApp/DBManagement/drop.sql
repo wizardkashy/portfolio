@@ -1,0 +1,3 @@
+-- DROP TABLE IF EXISTS `user`;
+DROP TABLE IF EXISTS `friendship`;
+DROP TABLE IF EXISTS `match`;

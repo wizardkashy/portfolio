@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap');
+body {
+  margin: 0;
+  background-image: url("Images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'PT Serif', serif;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr 1fr;
+  border-bottom: 2px solid white;
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+  background-color: #1B1A29;
+  color: white;
+}
+header>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+header>ul li {
+  list-style-type: none;
+  font-size: 1.4rem;
+}
+header>ul a {
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  color: white;
+}
+header>ul a:hover {
+  color: #9D97F0;
+}
+header img {
+  height: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#main {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 150px;
+  background-color: white;
+  min-height: 100vh;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 3px solid #524743;
+  border-right: 3px solid #524743;
+
+}
+header form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+header form>* {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+header p a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+header p {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+#main h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 0rem;
+}
+#main h2 {
+  font-family: 'PT Sans', sans-serif;
+  margin-top: 0.2rem;
+}
+#main p {
+  /* text-indent: 4rem; */
+  font-family: 'PT Serif', serif;
+}
+label {
+  display: block;
+  padding: 0.5rem;
+}
+label p {
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
+.danger {
+  color: #DE5331;
+}
+
+#content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#matchHistoryContainer {
+  display: flex;
+  flex-direction: column;
+}
+.match {
+  display: block;
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #101438;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr 3fr;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: black;
+}
+
+.wonmatch {
+  background-color: #B0E6AA;
+}
+.lostmatch {
+  background-color: #E6B1AC;
+}
+.drawmatch {
+  background-color: #E6E3B9;
+}
+#main a {
+    color: #37227D;
+}
+#main a:hover {
+    color: #5232BA;
+}
+#searchlist {
+    font-size: 1.3rem;
+}
+
+
+#leaderboard {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#leaderboard .leader {
+    color: black;
+}
+#leaderboard a {
+    text-decoration: none;
+}
+
+/* below: all styling for play.php*/
+
+#playField {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: white;
+}
+#playField #placeField {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#playField #dealField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#dealField #hostCards, #dealField #guestCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#placeField>* {
+  width: calc(40vh * 5 / 7);
+  height: 40vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-size: 3rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#dealField>*>*:not(.stunbanner) {
+  width: calc(20vh * 5 / 7);
+  height: 20vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+  font-size: 3rem;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body {
+  min-width: 100%;
+}
+body .banner {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(119, 120, 122, 0.7);
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3rem;
+}
+#dealField>* {
+  position: relative;
+}
+.stunbanner {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(243, 145, 169, 0.7);
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3rem;
+  border-radius: 15px;
+}
+
+.hidden {
+  display: none;
+}
+/* admin form styling*/
+#edituserinfo label, #addmatch label {
+  display: inline;
+}
+
+/* friends styling */
+#friends {
+  margin-left: 0.8rem;
+}
+#friends a {
+  margin: 0.1rem;
+}
+#friends h4 {
+  text-indent: 2rem;
+}
+
+/* styling for match display */
+#matchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+  border: 1px solid black;
+}
+#matchLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
